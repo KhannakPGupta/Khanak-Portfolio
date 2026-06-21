@@ -1,0 +1,196 @@
+.education-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.45rem 4.6rem;
+  background: rgba(15, 15, 19, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 1.15rem;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.education-glow {
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 50%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 50%, rgba(157, 78, 221, 0.05) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.education-card:hover .education-glow {
+  opacity: 1;
+}
+
+.edu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.edu-header {
+  display: flex;
+  align-items: center;
+  gap: 1.72rem;
+}
+
+.edu-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: var(--text-main);
+  transition: all 0.4s ease;
+}
+
+.education-card:hover .edu-icon-wrapper {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.05);
+}
+
+.edu-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.34rem;
+}
+
+.edu-degree {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.edu-university {
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.edu-details {
+  display: flex;
+  gap: 2.3rem;
+  align-items: center;
+}
+
+.edu-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.69rem;
+  color: var(--text-darker);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.edu-detail-icon {
+  color: var(--text-muted);
+}
+
+.edu-stats {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 3.45rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.grade-badge {
+  display: flex;
+  align-items: center;
+  gap: 1.38rem;
+  padding: 1.38rem 2.3rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.education-card:hover .grade-badge {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.grade-icon {
+  color: var(--accent-purple);
+}
+
+.grade-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.grade-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.grade-value {
+  font-size: 37px;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 992px) {
+  .education-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.45rem;
+    padding: 2.88rem;
+  }
+  
+  .edu-stats {
+    width: 100%;
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 2.3rem;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .edu-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .edu-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.15rem;
+  }
+}

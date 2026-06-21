@@ -1,0 +1,39 @@
+.footer {
+  padding: 2.3rem;
+  text-align: center;
+  background-color: var(--bg-color);
+  border-top: 1px solid var(--card-border);
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.72rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.72rem;
+}
+
+.social-links a {
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--text-main);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  color: var(--text-muted);
+  font-size: 1.03rem;
+}
+
+.highlight {
+  color: var(--accent-cyan);
+  font-weight: bold;
+}
