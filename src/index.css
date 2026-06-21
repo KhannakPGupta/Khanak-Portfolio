@@ -23,7 +23,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 65%; /* Scales down all rem units slightly more */
+  font-size: 60%; /* Master UI Scale */
 }
 
 body {
