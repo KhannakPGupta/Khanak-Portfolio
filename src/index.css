@@ -23,7 +23,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 75%; /* Scales down all rem units to exactly match 75% zoom */
+  font-size: 65%; /* Scales down all rem units slightly more */
 }
 
 body {
