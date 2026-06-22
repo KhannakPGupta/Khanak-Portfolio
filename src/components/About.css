@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--text-muted);
   height: 100%;
 }
