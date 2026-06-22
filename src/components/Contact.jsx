@@ -95,13 +95,13 @@ const Contact = () => {
                 </div>
               </a>
               
-              <a href="tel:9667748615" className="contact-method-card">
+              <a href="tel:9667749615" className="contact-method-card">
                 <div className="contact-icon-box">
                   <Phone size={24} className="contact-icon" />
                 </div>
                 <div className="contact-method-text">
                   <h4>Phone</h4>
-                  <span>+91 96677 48615</span>
+                  <span>+91 96677 49615</span>
                 </div>
               </a>
 
