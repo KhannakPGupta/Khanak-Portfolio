@@ -23,7 +23,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 60%; /* Master UI Scale */
+  font-size: 55%; /* Master UI Scale reduced for minimalistic look */
 }
 
 body {
