@@ -45,7 +45,7 @@ const Hero = () => {
           <a href="#projects" className="btn btn-primary">
             View My Work <ArrowRight size={18} />
           </a>
-          <a href="https://drive.google.com/file/d/1iHFUZ4fpGk9Ea48W3n170s-RFka6-6UH/view?usp=sharing" className="btn btn-outline" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1FBgLUM_3lZrcZMSfFUjD4E6Lwi_2G94o/view?usp=sharing" className="btn btn-outline" target="_blank" rel="noreferrer">
             Download Resume <Download size={18} />
           </a>
           <div className="hero-socials">
