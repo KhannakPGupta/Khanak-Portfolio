@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Briefcase, Trophy, Award } from 'lucide-react';
+import { Briefcase, Trophy, Award, Building2, Brain, Sparkles, Users, TrendingUp } from 'lucide-react';
 import './Experience.css';
 
 const Experience = () => {
@@ -7,74 +7,104 @@ const Experience = () => {
     {
       id: 1,
       type: "work",
-      title: "Open Source Developer",
-      organization: "GirlScript Summer of Code",
-      date: "May 2026 - Present",
+      title: "Corporate Member",
+      organization: "SRM Placfv's (Official Student Placement Team)",
+      date: "Oct 2026 - Present",
       description: [
-        "GSSoC Contributor.",
-        "Skill: Open-Source Development."
+        "Facilitate corporate relations, recruiter outreach, and campus placement drive coordination under the SRMIST Career Center.",
+        "Bridge communication between visiting industry recruiters and student candidates during recruitment cycles."
       ],
-      icon: <Briefcase size={20} />,
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+      icon: <Building2 size={20} />,
+      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 2,
       type: "work",
-      title: "AI/ML Member",
-      organization: "SRM Insider Community",
-      date: "Apr 2026 - Present",
+      title: "Undergraduate Researcher (UROP)",
+      organization: "Dept. of Computational Intelligence, SRMIST",
+      date: "Sep 2026 - Present",
       description: [
-        "Chennai, Tamil Nadu, India.",
-        "Skill: Artificial Intelligence (AI) and Machine Learning."
+        "Designing a secure, privacy-preserving, on-device AI & Federated Learning health companion under Dr. Vinston Raja R.",
+        "Focused on real-time physiological stress monitoring and early health warnings during heat waves, floods, and high-AQI events."
       ],
-      icon: <Briefcase size={20} />,
-      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&q=80"
+      icon: <Brain size={20} />,
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 3,
       type: "work",
-      title: "Trainee / AI ML Volunteer",
+      title: "AI/ML Lead",
+      promotion: "Promoted from AI/ML Member (Apr 2026 – Aug 2026)",
+      organization: "SRM Insider Community",
+      date: "Aug 2026 - Present",
+      description: [
+        "Lead the community's applied ML projects, directing end-to-end model building and evaluation across shared datasets.",
+        "Organize regular AI/ML skill-building sessions and technical workshops to strengthen members' applied machine learning fundamentals."
+      ],
+      icon: <Sparkles size={20} />,
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: 4,
+      type: "work",
+      title: "Member",
+      organization: "Rewriting The Code (RTC)",
+      date: "Jul 2026 - Present",
+      description: [
+        "Selected for a premier global community of early-career women in technology.",
+        "Participate in technical workshops, mentorship programs, and industry networking initiatives."
+      ],
+      icon: <Users size={20} />,
+      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: 5,
+      type: "work",
+      title: "AI/ML Trainee & Volunteer",
       organization: "Team Envision",
       date: "Sep 2025 - Present",
       description: [
-        "Chennai, Tamil Nadu, India.",
-        "Skill: Machine Learning, Artificial Intelligence (AI)."
+        "Build and train machine learning models supporting the team's ongoing applied AI/ML projects.",
+        "Collaborate in structured AI/ML training sessions to develop production-ready modeling workflows."
       ],
       icon: <Briefcase size={20} />,
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80"
     },
     {
-      id: 4,
+      id: 6,
       type: "work",
       title: "Market Research Analyst",
       organization: "Finlatics",
-      date: "March 2026 - May 2026",
+      date: "Mar 2026 - May 2026",
       description: [
-        "Market Research Analyst."
+        "Analyzed startup case studies to define target markets, evaluate competitive landscapes, and model user demographics.",
+        "Assessed market sizing and customer acquisition strategies to deliver data-backed insights for early-stage companies."
       ],
-      icon: <Briefcase size={24} />,
+      icon: <Briefcase size={20} />,
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
     },
     {
-      id: 5,
+      id: 7,
       type: "hackathon",
-      title: "Hackathon Participant & Winner",
-      organization: "Various",
-      date: "August 2025 - Present",
+      title: "Best Project & Best Team Lead",
+      organization: "AI/ML Domain & Club Competitions",
+      date: "Aug 2025 - Present",
       description: [
-        "Participated and won in competitive hackathons."
+        "Won 'Best Project' for The Last CEO; individually awarded 'Best Team Lead' and '2nd Best Performer' across 30+ participants.",
+        "Maintained Rank #1 across all competition phases in the AI/ML domain."
       ],
-      icon: <Trophy size={24} />,
+      icon: <Trophy size={20} />,
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
     },
     {
-      id: 6,
+      id: 8,
       type: "leadership",
-      title: "Environment Head",
-      organization: "School",
-      date: "2022 - 2024",
+      title: "Head, Shri Paryavaran (Environment) Club",
+      organization: "The Shriram Millennium School",
+      date: "Mar 2022 - Mar 2024",
       description: [
-        "Served as Environment Head in School."
+        "Elected Head for two consecutive years; youngest speaker at an ICSE panel on sustainability in schools.",
+        "Partnered with Saahas NGO to install the campus's first e-waste bin and built a recycled-material butterfly garden with Swechha Organization."
       ],
       icon: <Award size={20} />,
       image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=600&q=80"
@@ -130,6 +160,12 @@ const Experience = () => {
               <div className="timeline-info">
                 <h3 className="timeline-title">{exp.title}</h3>
                 <h4 className="timeline-org">{exp.organization}</h4>
+                {exp.promotion && (
+                  <div className="timeline-promotion">
+                    <TrendingUp size={15} />
+                    <span>{exp.promotion}</span>
+                  </div>
+                )}
                 <ul className="timeline-desc">
                   {exp.description.map((item, idx) => (
                     <li key={idx}>{item}</li>
