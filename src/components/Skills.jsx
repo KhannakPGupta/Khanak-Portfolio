@@ -1,36 +1,69 @@
 import React from 'react';
-import { Code2, Layers, Cpu, Database, Terminal, Server } from 'lucide-react';
-import { FaPython, FaJs, FaReact, FaNodeJs, FaDocker, FaGitAlt, FaHtml5 } from 'react-icons/fa';
+import {
+  Code2,
+  Cpu,
+  Database,
+  Server,
+  Brain,
+  Sparkles,
+  ScanLine,
+  Layers,
+  Activity,
+  Network,
+  LayoutDashboard,
+  LineChart,
+  Share2,
+  BookOpen,
+  Globe,
+  Cloud,
+  Table
+} from 'lucide-react';
+import { FaPython, FaJs, FaReact, FaGitAlt, FaHtml5, FaJava } from 'react-icons/fa';
 import './Skills.css';
 
 const Skills = () => {
   const skillGroups = [
     {
-      title: "Languages",
+      title: "Machine Learning & AI",
       items: [
-        { name: "Python", icon: <FaPython size={24} />, frequency: "Daily", projects: "GeoImpact, The Last CEO" },
-        { name: "JavaScript", icon: <FaJs size={24} />, frequency: "Daily", projects: "The Last CEO" },
-        { name: "HTML/CSS", icon: <FaHtml5 size={24} />, frequency: "Frequent", projects: "Portfolio, The Last CEO" },
-        { name: "C++", icon: <Code2 size={24} />, frequency: "Occasional", projects: "Academic Projects" },
-        { name: "SQL", icon: <Database size={24} />, frequency: "Frequent", projects: "GeoImpact, Data Analysis" }
+        { name: "XGBoost & Scikit-Learn", icon: <Brain size={24} />, frequency: "Daily", projects: "The Last CEO, GeoImpact, Bike Rental" },
+        { name: "LLMs, RAG & GenAI", icon: <Sparkles size={24} />, frequency: "Daily", projects: "FridgeMind (Gemini), SRM Insider AI, Yukti-AI" },
+        { name: "Computer Vision & OCR", icon: <ScanLine size={24} />, frequency: "Frequent", projects: "CardSnap AI (OpenCV, PaddleOCR), FridgeMind" },
+        { name: "NLP & Recommenders", icon: <Layers size={24} />, frequency: "Frequent", projects: "Movie Recommender (TF-IDF), FridgeMind" },
+        { name: "Explainable AI (SHAP)", icon: <Activity size={24} />, frequency: "Frequent", projects: "The Last CEO, GeoImpact Risk Engine" },
+        { name: "PyTorch & Federated AI", icon: <Network size={24} />, frequency: "Frequent", projects: "Personal Health Companion (UROP)" }
       ]
     },
     {
-      title: "Frameworks & Tools",
+      title: "Programming Languages",
       items: [
-        { name: "React", icon: <FaReact size={24} />, frequency: "Daily", projects: "The Last CEO, Portfolio" },
-        { name: "FastAPI", icon: <Server size={24} />, frequency: "Frequent", projects: "The Last CEO" },
-        { name: "Node.js", icon: <FaNodeJs size={24} />, frequency: "Occasional", projects: "API Development" },
-        { name: "Docker", icon: <FaDocker size={24} />, frequency: "Frequent", projects: "Deployment Pipelines" },
-        { name: "Git", icon: <FaGitAlt size={24} />, frequency: "Daily", projects: "All Projects" }
+        { name: "Python", icon: <FaPython size={24} />, frequency: "Daily", projects: "All AI/ML & Backend Projects" },
+        { name: "TypeScript & JavaScript", icon: <FaJs size={24} />, frequency: "Daily", projects: "The Last CEO, CardSnap AI, Portfolio" },
+        { name: "C & C++", icon: <Code2 size={24} />, frequency: "Frequent", projects: "180+ LeetCode Problems, Core CS" },
+        { name: "SQL & SQLite (FTS5)", icon: <Database size={24} />, frequency: "Frequent", projects: "FridgeMind, Data Analysis" },
+        { name: "HTML5 & CSS3", icon: <FaHtml5 size={24} />, frequency: "Frequent", projects: "Portfolio, CardSnap AI, FridgeMind" },
+        { name: "Java", icon: <FaJava size={24} />, frequency: "Occasional", projects: "STEP Tic-Tac-Toe, OOP" }
       ]
     },
     {
-      title: "Core Competencies",
+      title: "Frameworks & Libraries",
       items: [
-        { name: "Machine Learning", icon: <Cpu size={24} />, frequency: "Daily", projects: "GeoImpact, Predictive Models" },
-        { name: "Data Structures", icon: <Layers size={24} />, frequency: "Frequent", projects: "Algorithms, Optimization" },
-        { name: "API Design", icon: <Terminal size={24} />, frequency: "Frequent", projects: "The Last CEO Backend" }
+        { name: "FastAPI", icon: <Server size={24} />, frequency: "Daily", projects: "The Last CEO, FridgeMind, CardSnap AI" },
+        { name: "React", icon: <FaReact size={24} />, frequency: "Daily", projects: "The Last CEO, FridgeMind, CardSnap AI" },
+        { name: "Streamlit", icon: <LayoutDashboard size={24} />, frequency: "Daily", projects: "GeoImpact, Green-Wash, Movie Recommender" },
+        { name: "Pandas & NumPy", icon: <Table size={24} />, frequency: "Daily", projects: "GeoImpact, The Last CEO, Bike Rental" },
+        { name: "Plotly & Matplotlib", icon: <LineChart size={24} />, frequency: "Frequent", projects: "GeoImpact, Green-Wash Verifier" },
+        { name: "NetworkX & ChromaDB", icon: <Share2 size={24} />, frequency: "Frequent", projects: "Green-Wash Verifier, SRM Insider AI" }
+      ]
+    },
+    {
+      title: "Tools & Platforms",
+      items: [
+        { name: "Git & GitHub", icon: <FaGitAlt size={24} />, frequency: "Daily", projects: "All Open-Source & Team Repositories" },
+        { name: "Jupyter Notebook", icon: <BookOpen size={24} />, frequency: "Daily", projects: "GeoImpact, Movie Recommender, Bike Rental" },
+        { name: "REST & External APIs", icon: <Globe size={24} />, frequency: "Daily", projects: "Gemini 2.0, TMDB, Google Sheets" },
+        { name: "Vercel & Streamlit Cloud", icon: <Cloud size={24} />, frequency: "Frequent", projects: "The Last CEO, CardSnap AI, GeoImpact" },
+        { name: "Ollama & AWS PartyRock", icon: <Cpu size={24} />, frequency: "Frequent", projects: "SRM Insider AI (Gemma-2B), Yukti-AI" }
       ]
     }
   ];
