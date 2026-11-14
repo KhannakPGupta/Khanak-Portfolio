@@ -1,5 +1,5 @@
 .footer {
-  padding: 2.3rem;
+  padding: 1.75rem;
   text-align: center;
   background-color: var(--bg-color);
   border-top: 1px solid var(--card-border);
@@ -10,12 +10,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.72rem;
+  gap: 1rem;
 }
 
 .social-links {
   display: flex;
-  gap: 1.72rem;
+  gap: 1.25rem;
 }
 
 .social-links a {
@@ -23,17 +23,22 @@
   transition: all 0.3s ease;
 }
 
+.social-links a svg {
+  width: 20px;
+  height: 20px;
+}
+
 .social-links a:hover {
   color: var(--text-main);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .copyright {
   color: var(--text-muted);
-  font-size: 1.03rem;
+  font-size: 0.86rem;
 }
 
 .highlight {
   color: var(--accent-cyan);
-  font-weight: bold;
+  font-weight: 600;
 }

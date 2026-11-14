@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.72rem 10%;
+  padding: 1.1rem 6%;
   z-index: 1000;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   animation: slideDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -15,24 +15,26 @@
 }
 
 .navbar.scrolled {
-  padding: 1.15rem 10%;
+  padding: 0.8rem 6%;
   background: rgba(5, 5, 5, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .nav-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-logo {
-  font-size: 1.72rem;
-  font-weight: 800;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--text-main);
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 
 .nav-logo span {
@@ -42,16 +44,16 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2.88rem;
+  gap: 1.75rem;
 }
 
 .nav-link {
   position: relative;
-  font-size: 1.03rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-muted);
   transition: color 0.3s ease;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 .nav-link::after {
@@ -79,8 +81,8 @@
 }
 
 .nav-cta {
-  padding: 0.69rem 1.61rem;
-  font-size: 0.98rem;
+  padding: 0.5rem 1.15rem;
+  font-size: 0.88rem;
 }
 
 .mobile-only {
@@ -100,13 +102,13 @@
   top: 0;
   right: -100%;
   width: 75%;
-  max-width: 400px;
+  max-width: 320px;
   height: 100vh;
   background: var(--bg-secondary);
-  padding: 9.2rem 3.45rem;
+  padding: 5.5rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2.88rem;
+  gap: 1.5rem;
   transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   border-left: 1px solid var(--card-border);
 }
@@ -117,7 +119,7 @@
 }
 
 .mobile-link {
-  font-size: 1.38rem;
+  font-size: 1.05rem;
   font-weight: 500;
   color: var(--text-muted);
   display: block;
@@ -136,9 +138,9 @@
   }
   
   .navbar {
-    padding: 1.72rem 5%;
+    padding: 1rem 5%;
   }
   .navbar.scrolled {
-    padding: 1.15rem 5%;
+    padding: 0.75rem 5%;
   }
 }
